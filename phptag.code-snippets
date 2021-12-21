@@ -72,14 +72,25 @@
 		"scope": "javascript,typescript",
 		"prefix": "import",
 		"body": [
-			"import $1 from '$2';"
-		]
+			"import $1 from '$2';",
+		],
+		"description": "import Libs"
 	},
 	"function JS": {
 		"scope": "javascript,typescript",
 		"prefix": "fj",
 		"body": [
-			"$1 => {$2}$3"
+			"$1 => {$2}$3",
+		],
+		"description": "function JS"
+	},
+	"function long JS":{
+		"scope": "javascript,typescript",
+		"prefix": "func",
+		"body": [
+			"function $1 ($2){",
+			"$3",
+			"}"
 		]
 	}
 }
