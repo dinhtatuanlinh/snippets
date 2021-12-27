@@ -70,7 +70,7 @@
 	},
 	"import": {
 		"scope": "javascript,typescript,javascript react",
-		"prefix": "import",
+		"prefix": "imp",
 		"body": [
 			"import $1 from '$2';",
 		],
@@ -90,6 +90,18 @@
 		"body": [
 			"function $1 ($2){",
 			"$3",
+			"}"
+		]
+	},
+	"component": {
+		"scope": "javascript,typescript,javascript react",
+		"prefix": "com",
+		"body": [
+			"import React from 'react'",
+			"function $1 (){",
+			"return (",
+			"",
+			")",
 			"}"
 		]
 	}
